@@ -1,0 +1,123 @@
+name: fake-product-checker
+version: 1.0
+
+build:
+  command: npm install && npm start
+  node_version: 16
+BlockAuth Products 🚀
+
+Fake Product Identification using Blockchain
+
+
+
+
+
+
+
+
+Repository
+
+https://github.com/Hannah-art-dot/BlockAuth Products
+
+Project Description
+
+BlockAuth Products is a blockchain-based platform designed to verify authentic products and detect counterfeit goods. Using smart contracts on a local blockchain, the system ensures secure, transparent, and tamper-proof product verification.
+
+This project demonstrates how blockchain can enhance product authenticity and supply chain trust.
+
+Features
+
+✅ Add and verify products on the blockchain
+
+✅ Detect counterfeit products in real-time
+
+✅ Secure, tamper-proof product records
+
+✅ Integration with MetaMask for blockchain account management
+
+✅ User-friendly web interface
+
+Project Workflow
+flowchart LR
+A[User visits website] --> B[Connect MetaMask wallet]
+B --> C[Add or verify product]
+C --> D[Smart contract on local blockchain]
+D --> E[Blockchain records updated]
+E --> F[User receives verification result]
+
+
+Workflow: User → MetaMask → Smart Contract → Blockchain → Verification Result
+
+Required Packages
+
+Truffle: v5.6.7
+
+Ganache: v7.5.0
+
+Solidity: v0.5.16 (solc-js)
+
+Node.js: v15.8.0
+
+Web3.js: v1.7.4
+
+npm: 7.5.1
+
+Other Requirements
+
+Chromium-based browser (e.g., Chrome)
+
+MetaMask browser extension
+
+Setup Process
+
+Clone the project
+
+git clone https://github.com/Hannah-art-dot/BlockAuth\ Products.git
+
+
+Install dependencies
+
+cd "BlockAuth Products"
+npm install
+
+
+Compile smart contracts
+
+truffle compile
+
+
+Setup Ganache (local blockchain)
+
+Create a new workspace
+
+Add truffle-config.js
+
+Set port to 7545 (must match truffle-config.js)
+
+Configure MetaMask
+
+Add a new test network:
+
+Network ID: 5777
+
+RPC Server: http://127.0.0.1:8545
+
+Chain ID: 1337
+
+Import an account using a private key from Ganache
+
+Deploy smart contracts
+
+truffle migrate
+
+
+Start the development server
+
+npm run dev
+
+
+Connect MetaMask
+
+Login and connect to localhost:3000
+
+Interact with the website and test BlockAuth Products features
